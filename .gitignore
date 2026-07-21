@@ -1,0 +1,30 @@
+# Segredos / credenciais
+.env
+*.key
+*_secret*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Dados grandes (mídia) — versionar apenas amostras pequenas conscientemente
+data/video/*.mp4
+data/video/*.mov
+data/audio/*.wav
+data/audio/*.mp3
+data/audio/*.m4a
+!data/**/.gitkeep
+
+# Saídas geradas
+outputs/
+*.log
+
+# SO / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
