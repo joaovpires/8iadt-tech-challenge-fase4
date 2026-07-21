@@ -27,12 +27,30 @@ A integração final junta os três num **dashboard Streamlit** ([`/app`](app)).
 └── docs/       # relatório técnico
 ```
 
-## Como rodar (Google Colab)
+## Como rodar (local — recomendado)
 
-Não é preciso instalar nada localmente. Cada notebook em `video/`, `audio/` e
-`anomaly/` abre no Colab e instala suas dependências na primeira célula.
+Rodar localmente com Python 3.12 é mais prático (dados já no repo, sem re-upload a cada sessão).
 
-Para rodar localmente (opcional), veja [`requirements.txt`](requirements.txt).
+```bash
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+Depois:
+- **Notebooks** (`anomaly/`, `video/`) — abra no VS Code / Jupyter usando o `.venv`.
+- **Dashboard** — `streamlit run app/streamlit_app.py`.
+
+> No Windows, dá pra chamar o venv direto sem ativar:
+> `.venv\Scripts\python.exe -m streamlit run app\streamlit_app.py`
+
+### Alternativa: Google Colab
+Cada notebook também abre no Colab e instala as dependências na primeira célula —
+útil se você não quiser instalar nada localmente.
 
 ## Configuração do Azure
 

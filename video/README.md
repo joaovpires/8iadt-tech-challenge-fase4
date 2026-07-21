@@ -1,6 +1,6 @@
 # 🎥 Vídeo
 
-> **Notebook:** [`analise_pose.ipynb`](analise_pose.ipynb) — abre no Google Colab, faz upload do vídeo e roda o MediaPipe Pose (não depende do Azure). Usa a **API Tasks** (`PoseLandmarker`) e baixa o modelo `pose_landmarker.task` automaticamente.
+> **Notebook:** [`analise_pose.ipynb`](analise_pose.ipynb) — roda local (venv) ou no Colab; processa o vídeo com o MediaPipe Pose (não depende do Azure). Usa a **API Tasks** (`PoseLandmarker`) e baixa o modelo `pose_landmarker.task` automaticamente.
 >
 > **Resultado do vídeo de exemplo:** [`../data/video/resultado_pose.json`](../data/video/resultado_pose.json) — 8 repetições de agachamento detectadas (consumido pelo dashboard).
 
