@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "0.56s-1.36s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 37.6-68.4 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "2.48s-3.32s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 35.8-69.3 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "4.48s-5.24s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 35.8-67.0 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "6.44s-7.28s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 36.1-69.2 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "8.44s-9.28s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 35.7-67.7 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "10.40s-11.16s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 36.7-70.0 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "12.44s-13.24s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 34.3-68.6 fora da faixa 70-170"
+  },
+  {
+    "timestamp": "14.40s-15.12s",
+    "tipo": "movimento",
+    "articulacao": "joelho_direito",
+    "detalhe": "angulo 35.9-68.1 fora da faixa 70-170"
+  }
+]
