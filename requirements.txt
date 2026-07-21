@@ -1,18 +1,18 @@
-# --- Vídeo (Dia 3) ---
+# --- Vídeo ---
 mediapipe            # estimativa de pose (mais simples)
 ultralytics          # YOLOv8 (alternativa)
 opencv-python
 
-# --- Áudio (Dia 2) ---
+# --- Áudio ---
 azure-cognitiveservices-speech   # Azure Speech-to-Text
 azure-ai-textanalytics           # Azure AI Language (sentimento, entidades, key phrases)
 
-# --- Anomalias em vitais (Dia 4) ---
+# --- Anomalias em vitais ---
 scikit-learn         # Isolation Forest
 pandas
 numpy
 
-# --- Dashboard / demo (Dia 5) ---
+# --- Dashboard / demo ---
 streamlit
 matplotlib
 plotly

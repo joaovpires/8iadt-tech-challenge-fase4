@@ -1,4 +1,4 @@
-# 📈 Anomalias em vitais — Dia 4
+# 📈 Anomalias em vitais
 
 Detectar leituras fora do padrão na série temporal de sinais vitais.
 
@@ -13,4 +13,4 @@ Detectar leituras fora do padrão na série temporal de sinais vitais.
    consulta para outra, dispara alerta (usar um CSV de prescrições fictício).
 
 ## Saída esperada
-Lista de `{timestamp, sinal, valor, score}` das anomalias + alertas de prescrição — consumida no Dia 5.
+Lista de `{timestamp, sinal, valor, score}` das anomalias + alertas de prescrição — consumida pela integração.

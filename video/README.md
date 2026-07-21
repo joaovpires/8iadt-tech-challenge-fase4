@@ -1,4 +1,4 @@
-# 🎥 Vídeo — Dia 3
+# 🎥 Vídeo
 
 Analisar o movimento do paciente e sinalizar posturas anômalas.
 
@@ -14,4 +14,4 @@ Analisar o movimento do paciente e sinalizar posturas anômalas.
 `ang = atan2(Cy-By, Cx-Bx) - atan2(Ay-By, Ax-Bx)` (normalizar para 0–180°).
 
 ## Saída esperada
-Lista de `{timestamp, articulacao, angulo, descricao}` das anomalias — consumida no Dia 5.
+Lista de `{timestamp, articulacao, angulo, descricao}` das anomalias — consumida pela integração.

@@ -1,13 +1,13 @@
 # Relatório Técnico — Tech Challenge Fase 4
 
-> Preencher ao longo dos Dias 2–5. Esqueleto abaixo.
+> Esqueleto — preencher ao longo do desenvolvimento.
 
 ## 1. Visão geral
 Sistema multimodal de monitoramento de pacientes que integra vídeo, áudio e sinais
 vitais para gerar um alerta consolidado à equipe de saúde.
 
 ## 2. Arquitetura / fluxo multimodal
-_(Diagrama: áudio → vídeo → vitais → alerta consolidado. Descrever integração no Dia 5.)_
+_(Diagrama: áudio → vídeo → vitais → alerta consolidado. Descrever a integração dos módulos.)_
 
 ## 3. Módulos
 

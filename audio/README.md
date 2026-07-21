@@ -1,4 +1,4 @@
-# 🎙️ Áudio — Dia 2
+# 🎙️ Áudio
 
 Transcrever o relato do paciente e extrair sinais de risco.
 
@@ -12,7 +12,7 @@ Transcrever o relato do paciente e extrair sinais de risco.
 
 ## Saída esperada
 Um dict/JSON com: `transcricao`, `sentimento`, `key_phrases`, `entidades`,
-`alertas_criticos` (lista) — consumido pelo dashboard no Dia 5.
+`alertas_criticos` (lista) — consumido pelo dashboard de integração.
 
 ## Config
 Chaves em `.env` (`AZURE_SPEECH_KEY`, `AZURE_LANGUAGE_KEY`, ...). Ver `.env.example`.

@@ -1,5 +1,5 @@
 // Gera uma serie temporal sintetica de sinais vitais de um paciente,
-// com anomalias injetadas de proposito (para testar a deteccao no Dia 4).
+// com anomalias injetadas de proposito (para testar a deteccao de anomalias).
 // Uso: node gerar_vitais.js  ->  gera vitais_simulados.csv
 const fs = require('fs');
 

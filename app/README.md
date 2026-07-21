@@ -1,4 +1,4 @@
-# 🖥️ Dashboard / Integração — Dia 5
+# 🖥️ Dashboard / Integração
 
 Junta os três módulos num único fluxo e mostra um **alerta consolidado** para a equipe.
 
@@ -13,4 +13,4 @@ pip install -r ../requirements.txt
 streamlit run streamlit_app.py
 ```
 
-O Streamlit ajuda muito na hora de gravar o vídeo de demonstração (Dias 6-7).
+O Streamlit ajuda muito na hora de gravar o vídeo de demonstração.
