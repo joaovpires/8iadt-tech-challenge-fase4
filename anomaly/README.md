@@ -1,5 +1,7 @@
 # 📈 Anomalias em vitais
 
+> **Notebook:** [`deteccao_anomalias.ipynb`](deteccao_anomalias.ipynb) — abre no Google Colab e roda de imediato (usa o CSV do repo, não depende do Azure).
+
 Detectar leituras fora do padrão na série temporal de sinais vitais.
 
 ## Dados

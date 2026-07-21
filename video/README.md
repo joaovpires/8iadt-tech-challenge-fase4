@@ -1,5 +1,7 @@
 # 🎥 Vídeo
 
+> **Notebook:** [`analise_pose.ipynb`](analise_pose.ipynb) — abre no Google Colab, faz upload do vídeo e roda o MediaPipe Pose (não depende do Azure).
+
 Analisar o movimento do paciente e sinalizar posturas anômalas.
 
 ## Pipeline
