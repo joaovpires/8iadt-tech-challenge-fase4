@@ -9,7 +9,7 @@ para gerar um **alerta consolidado** para a equipe de saúde:
 | 🎙️ **Áudio** | Relato do paciente | Azure Speech-to-Text → Text Analytics (sentimento + entidades) + palavras-chave críticas | [`/audio`](audio) |
 | 📈 **Vitais** | Série temporal (HR, SpO₂, PA…) | Detecção de anomalias (Isolation Forest / z-score) | [`/anomaly`](anomaly) |
 
-A integração final (Dia 5) junta os três num **dashboard Streamlit** ([`/app`](app)).
+A integração final junta os três num **dashboard Streamlit** ([`/app`](app)).
 
 > ⚠️ **Dados**: não usamos dados reais de pacientes (questões éticas/privacidade).
 > Vitais são simulados, vídeo e áudio são gravados por nós ou de fontes livres.
@@ -39,15 +39,6 @@ Para rodar localmente (opcional), veja [`requirements.txt`](requirements.txt).
 Copie `.env.example` para `.env` e preencha com as chaves dos recursos
 **Azure AI Speech** e **Azure AI Language (Text Analytics)**. O `.env` está no
 `.gitignore` — **nunca** faça commit das chaves.
-
-## Cronograma
-
-- **Dia 1** — Setup (repo, Azure, dados de exemplo) ✅
-- **Dia 2** — Áudio: transcrição + sentimento + palavras-chave críticas
-- **Dia 3** — Vídeo: pose + regra de anomalia + relatório de timestamps
-- **Dia 4** — Vitais: Isolation Forest / z-score + regra de evolução de prescrição
-- **Dia 5** — Integração + relatório técnico (dashboard Streamlit)
-- **Dias 6-7** — Vídeo de demonstração (≤15 min) + revisão + entrega
 
 ## Entregáveis
 
