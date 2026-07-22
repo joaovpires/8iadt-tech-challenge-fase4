@@ -116,16 +116,33 @@ col_a, col_v, col_s = st.columns(3)
 # ---- Áudio ---------------------------------------------------------------- #
 with col_a:
     st.subheader("🎙️ Áudio")
-    texto = st.text_area("Transcrição do relato do paciente",
-                         value=TEXTO_EXEMPLO, height=140)
-    criticas = detectar_palavras_criticas(texto)
     audio_real = carregar_audio()
+
+    # usa transcrição do JSON se disponível; senão mostra exemplo editável
+    texto_inicial = audio_real.get("transcricao", TEXTO_EXEMPLO) if audio_real else TEXTO_EXEMPLO
+    texto = st.text_area("Transcrição do relato do paciente",
+                         value=texto_inicial, height=140)
+
+    # alertas críticos: prioriza o JSON; reprocessa se não houver JSON
+    if audio_real:
+        criticas = audio_real.get("alertas_criticos", [])
+    else:
+        criticas = detectar_palavras_criticas(texto)
+
     if criticas:
         st.error("Palavras-chave críticas: " + ", ".join(criticas))
     else:
         st.success("Nenhuma palavra-chave crítica encontrada.")
+
     if audio_real:
         st.metric("Sentimento (Azure)", audio_real.get("sentimento", "—"))
+        with st.expander("Key phrases e entidades (Azure)"):
+            kp = audio_real.get("key_phrases", [])
+            if kp:
+                st.markdown("**Key phrases:** " + " · ".join(kp))
+            ents = audio_real.get("entidades", [])
+            if ents:
+                st.dataframe(ents, hide_index=True, use_container_width=True)
     else:
         st.info("Transcrição automática e sentimento: **pendente (Azure)**.")
 
